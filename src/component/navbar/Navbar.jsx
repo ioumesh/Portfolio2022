@@ -1,11 +1,12 @@
 import React from "react";
+import Toggle from "../Toggle/Toggle";
 import "./navbar.scss";
 const Navbar = () => {
   return (
     <div className="navbarWrapper">
       <div className="navbarLeft">
         <div className="navbarName">Dev Umesh</div>
-        <span>Toggle</span>
+        <Toggle />
       </div>
       <div className="navbarRight">
         <div className="navbarList">
