@@ -1,0 +1,9 @@
+swiperjs --for sliders
+usestate --for show ok msg
+usecontext-- for dark mode
+useRef--- for trageting form
+icon scout-- footer social icons
+Framer motion--- motion of cards and divs
+react smooth scroll--
+email js--sending email
+react router dom
