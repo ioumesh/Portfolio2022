@@ -44,17 +44,6 @@
   position: absolute;
 }
 
-.blur {
-  position: absolute;
-  width: 22rem;
-  height: 14rem;
-  border-radius: 50%;
-  background: #edd0ff;
-  z-index: -9;
-  top: -18%;
-  left: 56%;
-  filter: blur(72px);
-}
 /* blur */
 .s-blur2 {
   left: 14rem;
@@ -64,4 +53,23 @@
 .s-blur1 {
   top: 13rem;
   left: -18rem;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .cards > * {
+    position: static;
+  }
 }

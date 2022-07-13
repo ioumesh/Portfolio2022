@@ -2,10 +2,10 @@ import "./App.css";
 import Contact from "./component/Contact/Contact";
 import Experience from "./component/Experience/Experience";
 import Footer from "./component/Footer/Footer";
-import Intro from "./component/intro/Intro";
-import Navbar from "./component/navbar/Navbar";
+import Intro from "./component/Intro/Intro";
+import Navbar from "./component/Navbar/Navbar";
 import Portfolio from "./component/Portfolio/Portfolio";
-import Services from "./component/services/Services";
+import Services from "./component/Services/Services";
 import Testimonial from "./component/Testimonials/Testimonial";
 import Works from "./component/Works/Works";
 import { useContext } from "react";
@@ -27,7 +27,7 @@ function App() {
       <Experience />
       <Works />
       <Portfolio />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
       <Footer />
     </div>

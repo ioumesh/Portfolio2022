@@ -4,7 +4,7 @@ export const themeContext = createContext();
 
 // intialize state
 
-const intialState = { darkMode: true };
+const intialState = { darkMode: false };
 
 // reducer
 

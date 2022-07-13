@@ -7,6 +7,7 @@ import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -40,7 +41,13 @@ const Works = () => {
         {/* right side */}
       </div>
       <div className="w-right">
-        <div className="w-mainCircle">
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 3.5, type: "spring" }}
+          className="w-mainCircle"
+        >
           <div className="w-secCircle">
             <img src={Upwork} alt="" />
           </div>
@@ -56,7 +63,7 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={Facebook} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
